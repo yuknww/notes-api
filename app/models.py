@@ -11,6 +11,6 @@ class Note(Base):
     id = Column(Integer, primary_key=True)
     title = Column(String)
     content = Column(Text)
-    done = Column(Boolean)
+    done = Column(Boolean, default=False)
     created_at = Column(DateTime, default=datetime.datetime.now())
     updated_at = Column(DateTime, default=datetime.datetime.now())
