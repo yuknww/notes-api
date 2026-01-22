@@ -4,6 +4,7 @@ from pydantic import BaseModel, Field, ConfigDict
 
 
 class NoteBase(BaseModel):
+    id: int
     title: str = Field(
         ...,
         min_length=1,
@@ -13,7 +14,7 @@ class NoteBase(BaseModel):
     done: bool = False
 
 
-class NoteCreate(BaseModel):
+class NoteCreate(NoteBase):
     pass
 
 

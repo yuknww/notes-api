@@ -2,7 +2,7 @@ import datetime
 
 from sqlalchemy import Column, Integer, String, Text, Boolean, DateTime
 
-from database import Base
+from app.database import Base
 
 
 class Note(Base):
