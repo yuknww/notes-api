@@ -92,8 +92,7 @@ app/
   schemas.py     # Pydantic схемы
   crud.py        # Логика CRUD
   database.py    # Подключение к БД
-  routers/
-    notes.py     # Маршруты для заметок
+  routers.py     # Маршруты для заметок
 requirements.txt
 Dockerfile
 docker-compose.yml
